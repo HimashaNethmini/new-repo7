@@ -10,7 +10,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
         loader: "babel-loader",
-        options: { preset: ["@babel/env"] },
+        options: { presets: ["@babel/env", "@babel/preset-react"] },
       },
       {
         test: /\.css$/,
@@ -32,7 +32,7 @@ module.exports = {
     devMiddleware: {
       publicPath: 'http://localhost:3000/dist/', // Adjust the path as needed
     },
-    hot: true
+    // hot: true
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
 };
