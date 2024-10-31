@@ -9,6 +9,6 @@ const TodoList = ( {todos = [{text: 'Hello' }] } ) => {
             {todos.map(todo => <TodoListItem todo={todo} />)}
         </div>
     )
-}
+} 
 
 export default TodoList
