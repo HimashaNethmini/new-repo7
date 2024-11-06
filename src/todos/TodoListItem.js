@@ -6,7 +6,8 @@ const TodoListItem = ({ todo }) => {
       <h3>{todo.text}</h3>
       <div className="button-container">
         <button className="completed-button">Mark As Complete</button>
-        <button className="removed-button">Remove</button>
+        <button 
+        onClick={()=> onRemovePressed(todo.text)} className="removed-button">Remove</button>
       </div>
     </div>
   );
